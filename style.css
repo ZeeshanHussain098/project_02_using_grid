@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'arial';
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+}
+section{
+    padding: 40px 0;
+}
+section:nth-child(even){
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+button{
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+header{
+    background-color: blue;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    margin-left: 26px;
+}
+
+header nav ul li:hover{
+    cursor: pointer;
+    background-color: black;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.user_profile .container{
+     height: 500px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.text_contents{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.text_contents h3{
+    font-size: 30px;
+    color: gray;
+}
+.text_contents h1{
+   
+    color: blue;
+}
+
+.text_contents h1, .title {
+     font-size: 70px;
+}
+.text_contents button:hover{
+  
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+}
+
+
+.profile_image{
+    position: relative;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background: url("assets/images/profile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: green;
+}
+
+.about_section .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.about_section .container .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-basis: 50%;
+}
+.about_section .container .right h1, .about_section .container .right p{
+    color: white;
+}
+.about_section .container .right p{
+    font-size: 22px;
+    text-align: center;
+}
+.about_section .left_image{
+    width: 500px;
+    height: 600px;
+    background: url(assets/images/about_me.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.project .container .title{
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.cards{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 5px;
+     overflow: hidden;
+}
+.card img{
+    width: 100%;
+    height: auto;
+   
+}
+
+.card p{
+    text-align: center;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.card a{
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: lightgray;
+    font-weight: 600;
+    color: gray;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+.contact .container{
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .container .contact_details, .contact_form{
+    flex-basis: 50%;
+}
+.contact .container .contact_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+.contact_email, .contact_number, .contact_address{
+    font-size: 18px;
+    text-align: center;
+}
+.contact .container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    background-color: whitesmoke;
+     color: gray;
+     padding: 10px;
+     border-radius: 5px;
+}
+
+.contact .container form .user_name{
+    display: flex;
+}
+
+.contact .container form .user_name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+}
+.contact .container form .input_box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact .container form .input_box label{
+ font-size: 18px;
+ margin-bottom: 12px;
+}
+.contact .container .contact_form input{
+    height: 36px;
+}
+
+.contact .container .contact_form textarea{
+    height: 150px;
+}
+
+.contact .container .contact_form input, textarea {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+
+.contact .container .contact_form .submit_button{
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 0;
+}
